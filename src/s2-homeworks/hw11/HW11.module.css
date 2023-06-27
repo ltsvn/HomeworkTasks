@@ -1,8 +1,14 @@
 .container {
+    display: block;
+    width: 50%;
+
 }
 
 .wrapper {
 }
 
 .number {
+
 }
+
+
