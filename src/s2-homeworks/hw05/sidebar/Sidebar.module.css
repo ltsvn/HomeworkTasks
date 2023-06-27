@@ -1,0 +1,56 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start with the sidebar hidden */
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    transition: left 0.3s ease;
+}
+
+.sidebar.open {
+    left: 0; /* Show the sidebar when open */
+    transition: left 0.3s ease;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 250px; /* Match the width of the sidebar */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+
+}
+
+.nav {
+    padding: 20px;
+
+}
+
+.nav a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav a:hover {
+    color: blue;
+}
+
+.nav a.active {
+    font-weight: bold;
+    color: #0066cc;
+}
+.close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.close img {
+    width: 20px;
+    height: 20px;
+}
